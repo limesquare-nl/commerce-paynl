@@ -1,0 +1,43 @@
+{
+  "name": "limesquare-nl/commerce-paynl",
+  "description": "Pay.nl integration for Craft Commerce",
+  "version": "1.0.0",
+  "type": "craft-plugin",
+  "keywords": [
+    "paynl",
+    "commerce",
+    "craftcms",
+    "omnipay",
+    "yii2"
+  ],
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Limesquare",
+      "homepage": "https://pixelandtonic.com/"
+    }
+  ],
+  "support": {
+    "email": "developers@limesquare.nl",
+    "issues": "https://github.com/limesquare-nl/commerce-paynl/issues?state=open",
+    "source": "https://github.com/limesquare-nl/commerce-paynl",
+    "docs": "https://github.com/limesquare-nl/commerce-paynl",
+    "rss": "https://github.com/limesquare-nl/commerce-paynl/commits/master.atom"
+  },
+  "require": {
+    "craftcms/commerce": "^2.0.0-alpha.6",
+    "craftcms/commerce-omnipay": "^1.0.0",
+    "andypieters/omnipay-paynl": "1.0.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "craft\\commerce\\paynl\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Pay.nl for Craft Commerce",
+    "handle": "commerce-paynl",
+    "changelogUrl": "https://raw.githubusercontent.com/limesquare-nl/commerce-paynl/master/CHANGELOG.md",
+    "downloadUrl": "https://github.com/limesquare-nl/commerce-paynl/archive/master.zip"
+  }
+}

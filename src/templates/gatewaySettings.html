@@ -1,0 +1,27 @@
+{% from "_includes/forms" import textField, lightswitchField %}
+
+{{ lightswitchField({
+    label: "Test-Modus"|t('app'),
+    instructions: "Wil je de test-modus voor pay.nl inschakelen"|t('app'),
+    id: 'testMode',
+    name: 'testMode',
+    on: gateway.testMode
+}) }}
+
+{{ textField({
+    label: 'API Tokey'|t('commerce'),
+    id: 'apiToken',
+    class: 'ltr',
+    name: 'apiToken',
+    value: gateway.apiToken,
+    errors: gateway.getErrors('apiToken')
+}) }}
+
+{{ textField({
+    label: 'Service ID'|t('commerce'),
+    id: 'serviceId',
+    class: 'ltr',
+    name: 'serviceId',
+    value: gateway.serviceId,
+    errors: gateway.getErrors('serviceId')
+}) }}
